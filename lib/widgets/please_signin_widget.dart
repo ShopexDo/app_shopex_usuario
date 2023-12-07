@@ -17,12 +17,12 @@ class PleaseSigninWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Sign in please",
+                "Inicia Sesión Por Favor",
                 style: TextStyle(color: redColor),
               ),
               const SizedBox(height: 20),
               PrimaryButton(
-                text: 'Signin',
+                text: 'Iniciar Sesión',
                 onPressed: () {
                   Navigator.pushNamed(context, RouteNames.authenticationScreen);
                 },

@@ -48,10 +48,10 @@ class SellerDto extends Equatable {
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
-      'shop_owner_id': shopOwnerId,
-      'shop_owner': shopOwner,
+      'shopexwner_id': shopOwnerId,
+      'shopexwner': shopOwner,
       'shop_name': shopName,
-      'shop_or_vendor_id': shopVendorId,
+      'shopexr_vendor_id': shopVendorId,
       'shop_slug': shopSlug,
       'shop_logo': shopLogo,
       'unread_message': unreadMessage,
@@ -61,13 +61,13 @@ class SellerDto extends Equatable {
 
   factory SellerDto.fromMap(Map<String, dynamic> map) {
     return SellerDto(
-      shopOwnerId: map['shop_owner_id'] != null
-          ? int.parse(map['shop_owner_id'].toString())
+      shopOwnerId: map['shopexwner_id'] != null
+          ? int.parse(map['shopexwner_id'].toString())
           : 0,
-      shopOwner: map['shop_owner'] as String,
+      shopOwner: map['shopexwner'] as String,
       shopName: map['shop_name'] as String,
-      shopVendorId: map['shop_or_vendor_id'] != null
-          ? int.parse(map['shop_or_vendor_id'].toString())
+      shopVendorId: map['shopexr_vendor_id'] != null
+          ? int.parse(map['shopexr_vendor_id'].toString())
           : 0,
       shopSlug: map['shop_slug'] as String,
       shopLogo: map['shop_logo'] as String,

@@ -139,7 +139,7 @@ class BecomeSellerScreen extends StatelessWidget {
                   TextFormField(
                     initialValue: state.openAt,
                     decoration: const InputDecoration(
-                      hintText: 'Open At',
+                      hintText: 'Abierto en',
                     ),
                     onChanged: (String value) =>
                         sellerCubit.openAtChange(value),
@@ -162,7 +162,7 @@ class BecomeSellerScreen extends StatelessWidget {
                   TextFormField(
                     initialValue: state.closeAt,
                     decoration: const InputDecoration(
-                      hintText: 'Closed At',
+                      hintText: 'Cerrado a las',
                     ),
                     onChanged: (String value) =>
                         sellerCubit.closeAtChange(value),
@@ -187,7 +187,7 @@ class BecomeSellerScreen extends StatelessWidget {
                   );
                 }
                 return PrimaryButton(
-                  text: 'Become Seller Request',
+                  text: 'Conviértete en Vendedor',
                   onPressed: () {
                     Utils.closeKeyBoard(context);
                     sellerCubit.becomeSellerRequest();
@@ -225,7 +225,7 @@ class BecomeSellerScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 5.0),
               child: Text(
-                'Agree Terms & Condition',
+                'Aceptar Términos y Condiciones',
                 style: TextStyle(color: blackColor.withOpacity(.5)),
               ),
             )

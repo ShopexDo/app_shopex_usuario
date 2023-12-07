@@ -5,12 +5,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grouped_list/grouped_list.dart';
 import 'package:intl/intl.dart';
 import 'package:pusher_client/pusher_client.dart';
-import 'package:shop_o/modules/authentication/controller/login/login_bloc.dart';
-import 'package:shop_o/modules/message/component/display_prodcut_card.dart';
-import 'package:shop_o/modules/message/controller/cubit/inbox_cubit.dart';
-import 'package:shop_o/modules/message/models/seller_messages_dto.dart';
-import 'package:shop_o/utils/constants.dart';
-import 'package:shop_o/widgets/rounded_app_bar.dart';
+import 'package:shopex/modules/authentication/controller/login/login_bloc.dart';
+import 'package:shopex/modules/message/component/display_prodcut_card.dart';
+import 'package:shopex/modules/message/controller/cubit/inbox_cubit.dart';
+import 'package:shopex/modules/message/models/seller_messages_dto.dart';
+import 'package:shopex/utils/constants.dart';
+import 'package:shopex/widgets/rounded_app_bar.dart';
 
 import '../../../utils/laravel_echo/laravel_echo.dart';
 import '../../../utils/logger.dart';

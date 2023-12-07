@@ -1,4 +1,4 @@
-# shop_o
+# shopex
 
 A new Flutter project.
 

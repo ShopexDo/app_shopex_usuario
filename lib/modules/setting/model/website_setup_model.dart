@@ -2,7 +2,7 @@
 import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
-import 'package:shop_o/utils/laravel_echo/pusher_info.dart';
+import 'package:shopex/utils/laravel_echo/pusher_info.dart';
 
 import '../../category/model/category_model.dart';
 import '../../home/model/setting_model.dart';

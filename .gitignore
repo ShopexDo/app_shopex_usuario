@@ -19,6 +19,9 @@
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
 #.vscode/
+#keytool -genkey -v -keystore key/upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias shopex
+#Shopex@2023
+#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
 
 # Flutter/Dart/Pub related
 **/doc/api/

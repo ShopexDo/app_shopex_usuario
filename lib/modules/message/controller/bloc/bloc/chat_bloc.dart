@@ -3,11 +3,11 @@ import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:shop_o/modules/authentication/controller/login/login_bloc.dart';
-import 'package:shop_o/modules/message/controller/repository/chat_respository.dart';
-import 'package:shop_o/modules/message/models/seller_messages_dto.dart';
-import 'package:shop_o/modules/message/models/send_message_response_dto.dart';
-import 'package:shop_o/modules/product_details/model/product_details_model.dart';
+import 'package:shopex/modules/authentication/controller/login/login_bloc.dart';
+import 'package:shopex/modules/message/controller/repository/chat_respository.dart';
+import 'package:shopex/modules/message/models/seller_messages_dto.dart';
+import 'package:shopex/modules/message/models/send_message_response_dto.dart';
+import 'package:shopex/modules/product_details/model/product_details_model.dart';
 
 import '../../../models/inbox_seller.dart';
 import '../../../models/send_message_model.dart';

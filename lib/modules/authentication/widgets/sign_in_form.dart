@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shop_o/utils/k_images.dart';
+import 'package:shopex/utils/k_images.dart';
 
 import '/modules/authentication/widgets/sign_up_form.dart';
 import '/widgets/capitalized_word.dart';
@@ -122,7 +122,7 @@ class _SignInFormState extends State<SignInForm> {
                   ),
                 ),
                 const Text(
-                  "OR",
+                  "O",
                   style: TextStyle(
                       color: textGreyColor,
                       fontSize: 16,
@@ -147,7 +147,7 @@ class _SignInFormState extends State<SignInForm> {
                   return const Center(child: CircularProgressIndicator());
                 }
                 return SocialButton(
-                  text: "Continue with Google",
+                  text: "Continuar con Google",
                   bgColor: Colors.white,
                   textColor: Colors.black,
                   icon: Kimages.google,
@@ -158,27 +158,27 @@ class _SignInFormState extends State<SignInForm> {
                 );
               },
             ),
-            const SizedBox(height: 25),
-            BlocBuilder<LoginBloc, LoginModelState>(
-              buildWhen: (previous, current) => previous.state != current.state,
-              builder: (context, state) {
-                if (state.state is FacebookStateLoading) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                return SocialButton(
-                  text: "Continue with Facebook",
-                  bgColor: Colors.blueAccent,
-                  textColor: Colors.white,
-                  icon: Kimages.facebook,
-                  onPressed: () {
-                    // Utils.closeKeyBoard(context);
-                    // loginBloc.add(const FacebookSignInEvent());
-                    Utils.showSnackBar(
-                        context, "Facebook login need further configuration");
-                  },
-                );
-              },
-            ),
+            // const SizedBox(height: 25),
+            // BlocBuilder<LoginBloc, LoginModelState>(
+            //   buildWhen: (previous, current) => previous.state != current.state,
+            //   builder: (context, state) {
+            //     if (state.state is FacebookStateLoading) {
+            //       return const Center(child: CircularProgressIndicator());
+            //     }
+            //     return SocialButton(
+            //       text: "Continue with Facebook",
+            //       bgColor: Colors.blueAccent,
+            //       textColor: Colors.white,
+            //       icon: Kimages.facebook,
+            //       onPressed: () {
+            //         // Utils.closeKeyBoard(context);
+            //         // loginBloc.add(const FacebookSignInEvent());
+            //         Utils.showSnackBar(
+            //             context, "Facebook login need further configuration");
+            //       },
+            //     );
+            //   },
+            // ),
             const SizedBox(height: 28),
             const GuestButton(),
           ],

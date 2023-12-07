@@ -38,7 +38,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:998376767480:android:65dc9c7354f691edd7a00d",
         "android_client_info": {
-          "package_name": "com.quomodosoft.shopo"
+          "package_name": "com.naranhosting.shopex"
         }
       },
       "oauth_client": [
@@ -46,7 +46,7 @@
           "client_id": "998376767480-5f41duf0sbqpatd0cbud21gbhuobfgt9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.quomodosoft.shopo",
+            "package_name": "com.naranhosting.shopex",
             "certificate_hash": "226b4fd9cfc09b2e283572877dda234957561f64"
           }
         },
